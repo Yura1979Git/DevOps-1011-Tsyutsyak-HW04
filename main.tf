@@ -25,10 +25,10 @@ resource "gitlab_project" "gitlab_wa_project" {
   namespace_id           = gitlab_group.gitlab_wa_group.id
   approvals_before_merge = 2
 
-  # push_rules {
-  #   prevent_secrets         = true
-  #   reject_unsigned_commits = true
-  # }
+  push_rules {
+    prevent_secrets         = true
+    reject_unsigned_commits = true
+  }
 
   depends_on = [
     gitlab_group.gitlab_wa_group

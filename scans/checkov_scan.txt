@@ -1,0 +1,34 @@
+
+       _               _              
+   ___| |__   ___  ___| | _______   __
+  / __| '_ \ / _ \/ __| |/ / _ \ \ / /
+ | (__| | | |  __/ (__|   < (_) \ V / 
+  \___|_| |_|\___|\___|_|\_\___/ \_/  
+                                      
+By bridgecrew.io | version: 2.2.125 
+
+terraform scan results:
+
+Passed checks: 5, Failed checks: 0, Skipped checks: 0
+
+Check: CKV_GLB_4: "Ensure GitLab commits are signed"
+	PASSED for resource: gitlab_project.gitlab_wa_project
+	File: /main.tf:21-36
+	Guide: https://docs.bridgecrew.io/docs/ensure-gitlab-commits-are-signed
+Check: CKV_GLB_1: "Ensure at least two approving reviews are required to merge a GitLab MR"
+	PASSED for resource: gitlab_project.gitlab_wa_project
+	File: /main.tf:21-36
+	Guide: https://docs.bridgecrew.io/docs/merge-requests-do-not-require-two-or-more-approvals-to-merge
+Check: CKV_GLB_3: "Ensure GitLab prevent secrets is enabled"
+	PASSED for resource: gitlab_project.gitlab_wa_project
+	File: /main.tf:21-36
+	Guide: https://docs.bridgecrew.io/docs/ensure-gitlab-prevent-secrets-is-enabled
+Check: CKV_GLB_2: "Ensure GitLab branch protection rules does not allow force pushes"
+	PASSED for resource: gitlab_branch_protection.main
+	File: /main.tf:47-53
+	Guide: https://docs.bridgecrew.io/docs/ensure-gitlab-branch-protection-rules-does-not-allow-force-pushes
+Check: CKV_AWS_41: "Ensure no hard coded AWS access key and secret key exists in provider"
+	PASSED for resource: aws.default
+	File: /providers.tf:8-12
+	Guide: https://docs.bridgecrew.io/docs/bc_aws_secrets_5
+

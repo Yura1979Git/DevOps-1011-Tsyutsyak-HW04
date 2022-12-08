@@ -1,0 +1,7 @@
+[1mProject:[0m Yura1979Git/DevOps-1011-Tsyutsyak-HW04
+
+ [4mName[0m  [4mMonthly Qty[0m  [4mUnit[0m  [4mMonthly Cost[0m 
+                                       
+[1m OVERALL TOTAL[0m                   $0.00 
+──────────────────────────────────
+No cloud resources were detected
